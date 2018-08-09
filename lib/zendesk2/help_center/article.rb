@@ -46,6 +46,8 @@ class Zendesk2::HelpCenter::Article
   # @return [Integer] The total sum of votes on this article
   attribute :vote_sum, type: :integer # ro:yes required:no
 
+  attribute :translations, type: :array # ro:yes required:no
+
   assoc_accessor :section, collection: :help_center_sections
 
   def translations
